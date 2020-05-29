@@ -1,0 +1,47 @@
+/*
+Credit to Florin Pop for the initial bar and animation
+https://codepen.io/FlorinPop17/full/VwwrByB
+*/
+#loading-container-wrapper {
+    text-align: center;
+}
+
+#loading-container {
+	background-color: rgb(255, 255, 255);
+	border: 2px solid rgb(175, 175, 175);
+	padding: 10px;
+	margin: 20px;
+	position: relative;
+	width: 400px;
+    max-width: 100%;
+    display: inline-block;
+    top: 20vh;
+}
+
+#loading-container::after {
+	background-color: #fff;
+	content: '';
+	position: absolute;
+	mix-blend-mode: difference;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	transform: scaleX(0);
+	transform-origin: center left;
+    animation: grow 2s linear 1 forwards;
+
+}
+
+@keyframes grow {
+	to {
+		transform: scaleX(1);
+	}
+}
+
+h1 {
+	margin: 0;
+	letter-spacing: 8px;
+	text-align: center;
+    font-family: 'Unreal Tournament', sans-serif;
+}

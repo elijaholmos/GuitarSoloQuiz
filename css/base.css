@@ -1,0 +1,47 @@
+/*Base stylesheet for all html pages */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+@font-face {
+  font-family: 'Unreal Tournament';
+  src: url('../fonts/unrealt.eot');
+  src: url('../fonts/unrealt.eot?') format('☺'),
+       url('../fonts/unrealt.woff') format('woff'),
+       url('../fonts/unrealt.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+    background:#000;
+    height: 97vh;
+    width: 99%;
+    position: absolute;
+    top: 0;
+}
+p {
+    color:rgb(231, 231, 226);
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+.hidden {
+    display:none;
+}
+canvas.canvas-full {
+    height: 100%;
+}
+canvas {
+    position: absolute;;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 33vh;
+}
+.button-wrapper {
+    text-align: center;
+}
+
+.modal, .custom-modal-class {
+    background: #000;
+    box-shadow: 0 0 4px #fff;
+}
